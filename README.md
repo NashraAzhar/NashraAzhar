@@ -1,3 +1,4 @@
+<img src="professional%20pic%20nashra.jpeg" width="180" align="right" style="border-radius: 15px; margin-left: 20px;">
 Computer Science Undergraduate 🎓
 
 ### UI/UX Designer | Software Engineer | Aspire Global Leader '25
