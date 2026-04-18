@@ -1,6 +1,3 @@
-### 🛠 Currently Leveling Up In:
-![](https://img.shields.io/badge/Generative_AI-blue?style=for-the-badge&logo=googlecloud&logoColor=white)
-![](https://img.shields.io/badge/Advanced_UX_Research-orange?style=for-the-badge&logo=figma&logoColor=white)
 Computer Science Undergraduate 🎓
 
 ### UI/UX Designer | Software Engineer | Aspire Global Leader '25
@@ -27,6 +24,12 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
 - **Tools:** VS Code, Dev-C++, Win32 API, DOSBox
 
 ---
+
+### 🛠 Currently Leveling Up In:
+
+![](https://img.shields.io/badge/Generative_AI-blue?style=for-the-badge&logo=googlecloud&logoColor=white) 
+![](https://img.shields.io/badge/Advanced_UX_Research-orange?style=for-the-badge&logo=figma&logoColor=white)
+![](https://img.shields.io/badge/System_Programming-green?style=for-the-badge&logo=cplusplus&logoColor=white)
 
 ## 📂 Featured Projects
 
