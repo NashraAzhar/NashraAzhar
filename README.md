@@ -5,7 +5,8 @@
 <img src="profile.jpeg" width="220" align="right" style="border-radius: 50px; border: 3px solid #00AEEF; margin-left: 20px; margin-bottom: 20px;">
 <img src="profile.jpeg" width="220" align="right" style="border-radius: 50px; border: 3px solid #FF3E8E; margin-left: 20px; margin-bottom: 20px;">
 
-# Nashra Azhar | Computer Science Undergraduate 🎓
+
+Computer Science Undergraduate 🎓
 
 ### UI/UX Designer | Software Engineer | Aspire Global Leader '25
 
