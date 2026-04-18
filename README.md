@@ -25,13 +25,12 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
 ## 🛠️ Technical Toolkit
 
 <p align="left">
-  <img src="https://img.shields.io/badge/C++-FF3E8E?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
-  <img src="https://img.shields.io/badge/Java-FF3E8E?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-FF3E8E?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/HTML5-FF3E8E?style=for-the-badge&logo=html5&logoColor=white" />
-  <img src="https://img.shields.io/badge/Figma-FF3E8E?style=for-the-badge&logo=figma&logoColor=white" />
-  <img src="https://img.shields.io/badge/UI/UX-FF3E8E?style=for-the-badge&logo=ux-design&logoColor=white" />
-  <img src="https://img.shields.io/badge/SQL-FF3E8E?style=for-the-badge&logo=oracle&logoColor=white" />
+  <img src="https://img.shields.io/badge/C++-0077B5?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-0077B5?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-0077B5?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Figma-0077B5?style=for-the-badge&logo=figma&logoColor=white" />
+  <img src="https://img.shields.io/badge/UI/UX-0077B5?style=for-the-badge&logo=ux-design&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-0077B5?style=for-the-badge&logo=oracle&logoColor=white" />
 </p>
 
 ---
