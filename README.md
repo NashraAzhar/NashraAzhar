@@ -1,16 +1,67 @@
-## Hi there 👋
+# Nashra Azhar | Computer Science Undergraduate 🎓
 
-<!--
-**NashraAzhar/NashraAzhar** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### UI/UX Designer | Software Engineer | Aspire Global Leader '25
 
-Here are some ideas to get you started:
+Professional portfolio showcasing my journey in Computer Science at **Fatima Jinnah Women University (2024 - 2028)**. I bridge the gap between technical logic and user-centric design.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 About Me
+
+I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). My focus lies in **UI/UX Design** and **Systems Engineering**. I am passionate about creating digital solutions for social impact, as seen in my project **StemConnect**.
+
+- 📍 **Location:** Rawalpindi, Pakistan
+- 📧 **Email:** [nashraazharofficial@gmail.com](mailto:nashraazharofficial@gmail.com)
+- 🔗 **LinkedIn:** [linkedin.com/in/nashraazhar](https://www.linkedin.com/in/nashraazhar)
+
+---
+
+## 🛠️ Technical Toolkit
+
+- **Design:** Figma, Prototyping, Wireframing, User Research
+- **Languages:** C/C++, Java, Python, Assembly (8086), HTML/CSS
+- **Databases:** Oracle SQL, Data Modeling
+- **Tools:** VS Code, Dev-C++, Win32 API, DOSBox
+
+---
+
+## 📂 Featured Projects
+
+### 🎨 StemConnect: Digital Healthcare UI/UX
+Designed a **17-screen responsive prototype** to bridge Pakistan’s healthcare gap, focusing on donor-patient matching and streamlined registration.
+
+### 🔒 SecureTrans: Hybrid Encryption System
+Developed a cryptography system using **8086 Assembly** and **C++ GUI** to ensure secure data integrity.
+
+### 📚 Library Management System
+Architected a digitised record system using **Java Swing** and **Oracle SQL** to enhance administrative efficiency.
+
+---
+
+## 📜 Certifications & Honors
+
+- **Aspire Global Leader (2025)** – Founded at Harvard University (Top 18% of 54k applicants).
+- **Google UX Design Specialization** – Coursera
+- **Governor for the Future** – NELIS & OML (Sustainable Leadership)
+- **3rd Position in Matriculation** – BISE Rawalpindi (95%)
+- **Introduction to Generative AI** – Google Cloud
+
+---
+
+## 🤝 Leadership & Volunteering
+
+- **Deputy Focal Person** – Creative Leadership Conference (CLC)
+- **Community Engagement Lead** – Waziristan Outreach Project
+- **Flood Relief Coordinator** – FJWU x Akhuwat Drive
+- **Event Manager** – Mental Health Week (CBS)
+
+---
+
+## 🌟 Professional Experience
+
+- **Software Engineering Simulation** – Wells Fargo (Forage)
+- **UX Design Simulation** – Lloyds Banking Group (Forage)
+- **Tulip Beauty Salon** – Customer Service & Management (Part-time)
+
+---
+*Feel free to reach out for collaborations in UI/UX or Software Development!*
