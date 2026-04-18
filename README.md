@@ -82,4 +82,13 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
   <img src="https://komarev.com/ghpvc/?username=NashraAzhar&color=FF3E8E&style=flat-square&label=PROFILE+VIEWS" />
 </p>
 
-*Feel free to reach out for collaborations in UI/UX or Software Development!*
+### 🐍 My Contribution Activity
+![Snake Animation](https://github-readme-activity-graph.vercel.app/graph?username=NashraAzhar&theme=radical&area=true&hide_border=true)
+
+### 🤝 Let's Connect!
+<p align="left">
+<a href="mailto:nashrah155@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" /></a>
+<a href="https://linkedin.com/in/nashraazhar"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.figma.com/@nashraazhar"><img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" /></a>
+</p>
+
