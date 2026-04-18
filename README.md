@@ -29,7 +29,7 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
 
 ### 🎨 StemConnect: Digital Healthcare UI/UX
 Designed a **17-screen responsive prototype** to bridge Pakistan’s healthcare gap, focusing on donor-patient matching and streamlined registration.
-[**🔗 View Figma Prototype**] https://www.figma.com/proto/EpEwDfWjJpdQyl75nfoxSp/StemConnect?node-id=2-2&p=f&t=s8mbMPD3XSKlnAUg-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1
+[Click here to view prototype](https://www.figma.com/proto/EpEwDfWjJpdQyl75nfoxSp/StemConnect?node-id=2-2&p=f&t=s8mbMPD3XSKlnAUg-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2&show-proto-sidebar=1)
 
 ### 🔒 SecureTrans: Hybrid Encryption System
 Developed a cryptography system using **8086 Assembly** and **C++ GUI** to ensure secure data integrity.
