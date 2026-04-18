@@ -63,7 +63,8 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 - **Software Engineering Simulation** – Wells Fargo (Forage)
 - **UX Design Simulation** – Lloyds Banking Group (Forage)
 - **Tulip Beauty Salon** – Customer Service & Management (Part-time)
-
+  
+---
 
 ## 📊 My GitHub Stats
 ![Nashra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=NashraAzhar&show_icons=true&theme=radical)
