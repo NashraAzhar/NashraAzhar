@@ -75,10 +75,9 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 ---
 
 ## 📊 My GitHub Stats
-
+### 🏆 My GitHub Trophies
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NashraAzhar&theme=radical&hide_border=true" width="38%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NashraAzhar&layout=compact&theme=radical&hide_border=true" width="38%" />
+  <img src="https://github-profile-trophy.vercel.app/?username=NashraAzhar&theme=radical&no-bg=true&column=4" alt="trophy" />
 </p>
 
 ---
