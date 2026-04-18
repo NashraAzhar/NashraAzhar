@@ -1,3 +1,6 @@
+### 🛠 Currently Leveling Up In:
+![](https://img.shields.io/badge/Generative_AI-blue?style=for-the-badge&logo=googlecloud&logoColor=white)
+![](https://img.shields.io/badge/Advanced_UX_Research-orange?style=for-the-badge&logo=figma&logoColor=white)
 Computer Science Undergraduate 🎓
 
 ### UI/UX Designer | Software Engineer | Aspire Global Leader '25
