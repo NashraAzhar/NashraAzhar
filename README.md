@@ -31,6 +31,8 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
 ![](https://img.shields.io/badge/Advanced_UX_Research-orange?style=for-the-badge&logo=figma&logoColor=white)
 ![](https://img.shields.io/badge/System_Programming-green?style=for-the-badge&logo=cplusplus&logoColor=white)
 
+---
+
 ## 📂 Featured Projects
 
 ### 🎨 StemConnect: Digital Healthcare UI/UX
