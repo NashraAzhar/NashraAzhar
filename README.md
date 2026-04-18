@@ -1,9 +1,3 @@
-### 🎨 Design & Logic Proficiency
-**UI/UX Design & Prototyping** ![90%](https://progress-bar.dev/90/?title=Design&color=FF3E8E)
-
-**C++ & Logic Building** ![75%](https://progress-bar.dev/75/?title=Logic&color=79FFDF)
-
-**Leadership & Management** ![85%](https://progress-bar.dev/85/?title=Leadership&color=FF3E8E)
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF3E8E&center=true&vCenter=true&width=500&lines=I+design+user-centric+experiences+%🎨;Software+Engineering+Aspirant+%💻;Aspire+Global+Leader+'25+%🌟;FJWU+Computer+Science+Student+%🎓" alt="Typing SVG" />
 </p>
@@ -38,12 +32,6 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
   <img src="https://img.shields.io/badge/Figma-FF3E8E?style=for-the-badge&logo=figma&logoColor=white" />
   <img src="https://img.shields.io/badge/UI/UX-FF3E8E?style=for-the-badge&logo=ux-design&logoColor=white" />
   <img src="https://img.shields.io/badge/SQL-FF3E8E?style=for-the-badge&logo=oracle&logoColor=white" />
-</p>
-
-### ⚡ Currently Leveling Up In:
-<p align="left">
-  <img src="https://img.shields.io/badge/Generative_AI-79FFDF?style=for-the-badge&logo=googlecloud&logoColor=black" />
-  <img src="https://img.shields.io/badge/Advanced_Prototyping-79FFDF?style=for-the-badge&logo=figma&logoColor=black" />
 </p>
 
 ---
@@ -82,8 +70,7 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
   <img src="https://komarev.com/ghpvc/?username=NashraAzhar&color=FF3E8E&style=flat-square&label=PROFILE+VIEWS" />
 </p>
 
-### 🐍 My Contribution Activity
-![Snake Animation](https://github-readme-activity-graph.vercel.app/graph?username=NashraAzhar&theme=radical&area=true&hide_border=true)
+---
 
 ### 🤝 Let's Connect!
 <p align="left">
