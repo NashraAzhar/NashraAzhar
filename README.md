@@ -59,19 +59,6 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 
 ---
 
-## 📊 My Coding Journey
-
-| 🔥 My Streak | 💻 Top Languages |
-| :---: | :---: |
-| <img src="https://github-readme-streak-stats.herokuapp.com/?user=NashraAzhar&theme=radical&hide_border=true" width="300px"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NashraAzhar&layout=compact&theme=radical&hide_border=true" width="300px"/> |
-
----
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=NashraAzhar&color=FF3E8E&style=flat-square&label=PROFILE+VIEWS" />
-</p>
-
----
-
 ### 🤝 Let's Connect!
 <p align="left">
 <a href="mailto:nashrah155@gmail.com"><img src="https://img.shields.io/badge/Gmail-00AEEF?style=for-the-badge&logo=gmail&logoColor=white" /></a>
