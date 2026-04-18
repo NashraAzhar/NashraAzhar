@@ -52,12 +52,16 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 
 ## 📜 Certifications & Honors
 
-- 🏆 **Aspire Global Leader (2025)** – Founded at Harvard University (Top 18%).
-- 🎓 **Google UX Design Specialization** – Coursera.
-- 🌍 **Governor for the Future** – NELIS & OML.
-- ⭐ **3rd Position in Matriculation** – BISE Rawalpindi (95%).
-
+- 🏆 **Aspire Global Leader (2025)** – Founded at Harvard University (Top 18% of 54k applicants)
+- 🎨 **Google UX Design Specialization** – Coursera (Google)
+- 🤖 **Introduction to Generative AI** – Google Cloud
+- 💡 **AI for Everyone** – DeepLearning.AI
+- 🌐 **Introduction to HTML** – University of Michigan
+- 🌍 **Governor for the Future** – NELIS & OML (Sustainable Leadership)
+- ⭐ **3rd Position in Matriculation** – BISE Rawalpindi (95% marks)
+  
 ---
+
 ## 🤝 Leadership & Volunteering
 
 - **Deputy Focal Person** – Creative Leadership Conference (CLC)
