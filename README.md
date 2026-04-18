@@ -11,7 +11,7 @@ Professional portfolio showcasing my journey in Computer Science at **Fatima Jin
 I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). My focus lies in **UI/UX Design** and **Systems Engineering**. I am passionate about creating digital solutions for social impact, as seen in my project **StemConnect**.
 
 - 📍 **Location:** Rawalpindi, Pakistan
-- 📧 **Email:** [nashrah155l@gmail.com](mailto:nashrah155l@gmail.com)
+- 📧 **Email:** [nashrah155@gmail.com](mailto:nashrah155l@gmail.com)
 - 🔗 **LinkedIn:** [linkedin.com/in/nashraazhar](https://www.linkedin.com/in/nashraazhar)
 
 ---
