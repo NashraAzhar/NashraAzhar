@@ -5,10 +5,9 @@
 <img src="profile.jpeg" width="220" align="right" style="border-radius: 50px; border: 3px solid #00AEEF; margin-left: 20px; margin-bottom: 20px;">
 <img src="profile.jpeg" width="220" align="right" style="border-radius: 50px; border: 3px solid #FF3E8E; margin-left: 20px; margin-bottom: 20px;">
 
-
-Computer Science Undergraduate 🎓
-
-### UI/UX Designer | Software Engineer | Aspire Global Leader '25
+# Nashra Azhar 
+### Computer Science Undergraduate 🎓
+**UI/UX Designer | Software Engineer | Aspire Global Leader '25**
 
 Professional portfolio showcasing my journey in Computer Science at **Fatima Jinnah Women University (2024 - 2028)**. I bridge the gap between technical logic and user-centric design.
 
