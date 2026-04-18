@@ -1,3 +1,6 @@
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=F24E1E&center=true&vCenter=true&width=500&lines=I+am+a+UI/UX+Designer+%🎨;Software+Engineering+Aspirant+%💻;Aspire+Global+Leader+'25+%🌟;FJWU+Student+%🎓" alt="Typing SVG" />
+</p>
 Computer Science Undergraduate 🎓
 
 ### UI/UX Designer | Software Engineer | Aspire Global Leader '25
