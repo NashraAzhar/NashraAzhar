@@ -1,3 +1,9 @@
+### 🎨 Design & Logic Proficiency
+**UI/UX Design & Prototyping** ![90%](https://progress-bar.dev/90/?title=Design&color=FF3E8E)
+
+**C++ & Logic Building** ![75%](https://progress-bar.dev/75/?title=Logic&color=79FFDF)
+
+**Leadership & Management** ![85%](https://progress-bar.dev/85/?title=Leadership&color=FF3E8E)
 <p align="center">
   <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=FF3E8E&center=true&vCenter=true&width=500&lines=I+design+user-centric+experiences+%🎨;Software+Engineering+Aspirant+%💻;Aspire+Global+Leader+'25+%🌟;FJWU+Computer+Science+Student+%🎓" alt="Typing SVG" />
 </p>
