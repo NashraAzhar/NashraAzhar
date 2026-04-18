@@ -75,8 +75,11 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 ---
 
 ## 📊 My GitHub Stats
-![Nashra's GitHub Stats](https://github-readme-stats.vercel.app/api?username=NashraAzhar&show_icons=true&theme=radical)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=NashraAzhar&layout=compact&theme=radical)
+## 📊 My Coding Journey
+<p align="left">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=NashraAzhar&theme=radical&hide_border=true" alt="Nashra's Streak" width="48%"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NashraAzhar&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%"/>
+</p>
 
 ---
 *Feel free to reach out for collaborations in UI/UX or Software Development!*
