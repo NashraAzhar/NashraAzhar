@@ -76,7 +76,7 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 
 ## 📊 My Coding Journey
 
-| 🔥 My Streak | 💻 Top Languages |
+|  My Streak | 💻 Top Languages |
 | :---: | :---: |
 | <img src="https://github-readme-streak-stats.herokuapp.com/?user=NashraAzhar&theme=radical&hide_border=true" width="300px"/> | <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=NashraAzhar&layout=compact&theme=radical&hide_border=true" width="300px"/> |
 
