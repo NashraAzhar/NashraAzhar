@@ -21,10 +21,20 @@ I am a dedicated CS student and an **Aspire Global Leader** (Top 18% globally). 
 
 ## 🛠️ Technical Toolkit
 
-- **Design:** Figma, Prototyping, Wireframing, User Research
-- **Languages:** C/C++, Java, Python, Assembly (8086), HTML/CSS
-- **Databases:** Oracle SQL, Data Modeling
-- **Tools:** VS Code, Dev-C++, Win32 API, DOSBox
+
+<p align="left">
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/Assembly-000000?style=for-the-badge&logo=micro-processor&logoColor=white" />
+</p>
+<p align="left">
+  <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
+  <img src="https://img.shields.io/badge/UI/UX-FF61F6?style=for-the-badge&logo=ux-design&logoColor=white" />
+  <img src="https://img.shields.io/badge/Prototyping-5300F9?style=for-the-badge&logo=adobe-xd&logoColor=white" />
+  <img src="https://img.shields.io/badge/SQL-003545?style=for-the-badge&logo=oracle&logoColor=white" />
+</p>
 
 ---
 
