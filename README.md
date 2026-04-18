@@ -58,6 +58,22 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 - ⭐ **3rd Position in Matriculation** – BISE Rawalpindi (95%).
 
 ---
+## 🤝 Leadership & Volunteering
+
+- **Deputy Focal Person** – Creative Leadership Conference (CLC)
+- **Community Engagement Lead** – Waziristan Outreach Project
+- **Flood Relief Coordinator** – FJWU x Akhuwat Drive
+- **Event Manager** – Mental Health Week (CBS)
+
+---
+
+## 🌟 Professional Experience
+
+- **Software Engineering Simulation** – Wells Fargo (Forage)
+- **UX Design Simulation** – Lloyds Banking Group (Forage)
+- **Tulip Beauty Salon** – Customer Service & Management (Part-time)
+
+---
 
 ### 🤝 Let's Connect!
 <p align="left">
