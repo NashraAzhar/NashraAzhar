@@ -67,7 +67,8 @@ Architected a digitised record system using **Java Swing** and **Oracle SQL** to
 - **Deputy Focal Person** – Creative Leadership Conference (CLC)
 - **Community Engagement Lead** – Waziristan Outreach Project
 - **Flood Relief Coordinator** – FJWU x Akhuwat Drive
-- **Event Manager** – Mental Health Week (CBS)
+- **Event Operations Volunteer** – Mental Health Week, CBS 
+- **Decor Team Member** – Mental Health Week, CBS 
 
 ---
 
