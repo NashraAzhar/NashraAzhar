@@ -26,7 +26,7 @@
             transition: background 0.3s, color 0.2s;
         }
 
-        /* DARK MODE VARIABLES (applied when body has .dark-mode class) */
+        /* DARK MODE VARIABLES */
         body.dark-mode {
             background: #0a192f;
             color: #e2e8f0;
@@ -106,13 +106,11 @@
             background: #3b82f6;
         }
 
-        /* container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        /* ===== COLOR VARIABLES (light mode) ===== */
         :root {
             --bg-body: #f1f5f9;
             --card-white: #ffffff;
@@ -126,7 +124,6 @@
             --transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
         }
 
-        /* fade-in animation */
         @keyframes fadeInUp {
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
@@ -136,7 +133,6 @@
             animation: fadeInUp 0.5s ease forwards;
         }
 
-        /* profile header with DARK BLUE BACKGROUND + WHITE TEXT (always) */
         .profile-header {
             background: #0a2540;
             color: white;
@@ -180,7 +176,6 @@
             color: #90cdf4;
         }
 
-        /* Section cards (light mode default) */
         .section-card {
             background: var(--card-white);
             border-radius: 28px;
@@ -211,7 +206,6 @@
             font-size: 1.6rem;
         }
 
-        /* list items */
         .edu-item, .project-item, .award-item, .vol-item, .work-item {
             margin-bottom: 1.8rem;
             padding-bottom: 1rem;
@@ -244,7 +238,6 @@
             color: var(--text-secondary);
         }
 
-        /* skill badges */
         .skills-badge {
             display: flex;
             flex-wrap: wrap;
@@ -268,7 +261,6 @@
             box-shadow: 0 4px 10px rgba(37,99,235,0.3);
         }
 
-        /* navigation arrows */
         .nav-arrows {
             display: flex;
             justify-content: center;
@@ -323,7 +315,6 @@
             background: var(--accent-hover);
             transform: translateY(-3px);
         }
-        /* Buttons row */
         .action-buttons {
             display: flex;
             justify-content: flex-end;
@@ -374,13 +365,11 @@
 <body>
 
 <div class="container">
-    <!-- Action Buttons (Dark Mode + PDF Download) -->
     <div class="action-buttons">
         <button id="darkModeToggle" class="action-btn"><i class="fas fa-moon"></i> Dark Mode</button>
         <button id="downloadPDFBtn" class="action-btn"><i class="fas fa-file-pdf"></i> Download CV (PDF)</button>
     </div>
 
-    <!-- Header with dark blue background -->
     <div class="profile-header">
         <h1>Nashra Azhar</h1>
         <div class="contact-info">
@@ -391,7 +380,6 @@
         </div>
     </div>
 
-    <!-- EDUCATION -->
     <div id="section-education" class="section-card">
         <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
         <div class="edu-item"><div class="edu-title">BS Computer Science (Ongoing)</div><div class="edu-date">Fatima Jinnah Women University, Rawalpindi | 10/2024 – Current</div></div>
@@ -399,7 +387,6 @@
         <div class="edu-item"><div class="edu-title">Matriculation in Computer Science</div><div class="edu-date">Shaheen Public School and College | 03/2020 – 04/2022</div></div>
     </div>
 
-    <!-- PROJECTS -->
     <div id="section-projects" class="section-card">
         <div class="section-title"><i class="fas fa-code"></i> Projects</div>
         <div class="project-item"><div class="project-title">StemConnect: Responsive UI/UX Design System</div><div class="project-date">11/07/2025 – 01/08/2025</div><ul class="desc-list"><li>Designed a 17-screen UI/UX prototype to bridge Pakistan’s digital healthcare gap, enabling direct citizen registration and streamlining donor-patient matching.</li></ul></div>
@@ -407,7 +394,6 @@
         <div class="project-item"><div class="project-title">SecureTrans: Hybrid Encryption System (Assembly & C++ GUI)</div><div class="project-date">01/2026</div><ul class="desc-list"><li>Developed hybrid cryptography system using 8086 Assembly and C++ (Win32 API)</li><li>Verified architecture & algorithm integrity in DOSBox/MASM.</li></ul></div>
     </div>
 
-    <!-- HONOURS & AWARDS -->
     <div id="section-awards" class="section-card">
         <div class="section-title"><i class="fas fa-trophy"></i> Honours & Awards</div>
         <div class="award-item"><div class="award-title">Aspire Global Leader</div><div class="award-date">Aspire Institute (founded at Harvard University) | 12/2025</div><ul class="desc-list"><li>Aspire Global Leader — 2025 (Top 18% of 54,000+ applicants globally).</li></ul></div>
@@ -415,7 +401,6 @@
         <div class="award-item"><div class="award-title">3rd Position in Matriculation Exams (Sub-District Level)</div><div class="award-date">BISE Rawalpindi — 2022 (95%, 1041/1100)</div></div>
     </div>
 
-    <!-- VOLUNTEERING -->
     <div id="section-volunteering" class="section-card">
         <div class="section-title"><i class="fas fa-hands-helping"></i> Volunteering</div>
         <div class="vol-item"><div class="vol-title">Deputy Focal Person - Creative Leadership Conference (CLC)</div><div class="vol-date">10/2025 – 11/2025</div><ul class="desc-list"><li>Led an 8-ambassador team to drive participation for a national youth conference, securing 23+ student registrations.</li></ul></div>
@@ -424,7 +409,6 @@
         <div class="vol-item"><div class="vol-title">Mental Health Week, CBS</div><div class="vol-date">10/2025</div><ul class="desc-list"><li>Managed logistics and operations for a 2-day campus event with 600+ participants using entrepreneurial problem-solving.</li><li>Decor Team Member - Supported week-long awareness campaign by managing event setup and decor.</li></ul></div>
     </div>
 
-    <!-- WORK EXPERIENCE -->
     <div id="section-work" class="section-card">
         <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
         <div class="work-item"><div class="work-title">Software Engineering Simulation | Wells Fargo (via Forage)</div><div class="work-date">02/2026</div><ul class="desc-list"><li>Developed skills in data modeling and ERD design by learning and applying Wells Fargo’s professional engineering standards.</li></ul></div>
@@ -432,7 +416,6 @@
         <div class="work-item"><div class="work-title">Tulip Beauty Salon | Beauty Salon Assistant</div><div class="work-date">01/02/2022 – Current</div><ul class="desc-list"><li>Managed client appointments, payments, and customer service.</li></ul></div>
     </div>
 
-    <!-- SKILLS -->
     <div id="section-skills" class="section-card">
         <div class="section-title"><i class="fas fa-cogs"></i> Skills</div>
         <div class="skills-badge">
@@ -440,7 +423,6 @@
         </div>
     </div>
 
-    <!-- COURSERA & CERTIFICATIONS -->
     <div id="section-courses" class="section-card">
         <div class="section-title"><i class="fas fa-certificate"></i> Courses & Certifications</div>
         <ul class="desc-list" style="margin-bottom:0;">
@@ -451,10 +433,14 @@
         </ul>
     </div>
 
-    <!-- CONFERENCES -->
+    <!-- CONFERENCES - Certificate Link REMOVED -->
     <div id="section-conferences" class="section-card">
         <div class="section-title"><i class="fas fa-users"></i> Conferences & Seminars</div>
-        <div class="award-item"><div class="award-title">Emerging Technologies: Generative AI & LLM</div><div class="award-date">11/2025</div><ul class="desc-list"><li>Participated in expert-led sessions on Generative AI & LLMs and AI Governance with industry leaders (Arsh.AI). <a href="#" id="certLink" style="color:var(--accent-blue);">Certificate Link</a></li></ul></div>
+        <div class="award-item">
+            <div class="award-title">Emerging Technologies: Generative AI & LLM</div>
+            <div class="award-date">11/2025</div>
+            <ul class="desc-list"><li>Participated in expert-led sessions on Generative AI & LLMs and AI Governance with industry leaders (Arsh.AI).</li></ul>
+        </div>
     </div>
 
     <!-- Arrow navigation -->
@@ -470,7 +456,6 @@
 </div>
 
 <script>
-    // ======================== DARK MODE TOGGLE ========================
     const darkModeToggle = document.getElementById('darkModeToggle');
     darkModeToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
@@ -481,24 +466,21 @@
         }
     });
 
-    // ======================== PDF DOWNLOAD ========================
     const downloadBtn = document.getElementById('downloadPDFBtn');
     downloadBtn.addEventListener('click', () => {
         const element = document.querySelector('.container');
         const opt = {
-            margin:        [0.5, 0.5, 0.5, 0.5],
-            filename:     'Nashra_Azhar_CV.pdf',
-            image:        { type: 'jpeg', quality: 0.98 },
-            html2canvas:  { scale: 2, letterRendering: true, useCORS: true },
-            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+            margin: [0.5, 0.5, 0.5, 0.5],
+            filename: 'Nashra_Azhar_CV.pdf',
+            image: { type: 'jpeg', quality: 0.98 },
+            html2canvas: { scale: 2, letterRendering: true, useCORS: true },
+            jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
         };
         html2pdf().set(opt).from(element).save();
     });
 
-    // ======================== SECTION NAVIGATION (ARROWS) ========================
     const sections = Array.from(document.querySelectorAll('.section-card'));
     let currentIndex = 0;
-
     function scrollToSection(index) {
         if (index < 0) index = 0;
         if (index >= sections.length) index = sections.length - 1;
@@ -507,7 +489,6 @@
         sections[currentIndex].style.transform = 'scale(1.01)';
         setTimeout(() => { if(sections[currentIndex]) sections[currentIndex].style.transform = ''; }, 200);
     }
-
     document.getElementById('nextSectionBtn').addEventListener('click', () => {
         if (currentIndex + 1 < sections.length) scrollToSection(currentIndex + 1);
         else scrollToSection(0);
@@ -525,8 +506,6 @@
             (currentIndex - 1 >= 0) ? scrollToSection(currentIndex-1) : scrollToSection(sections.length-1);
         }
     });
-
-    // update currentIndex on scroll
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -536,7 +515,6 @@
     }, { threshold: 0.5 });
     sections.forEach(s => observer.observe(s));
 
-    // Scroll to top button
     const topBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) topBtn.classList.add('show');
@@ -544,12 +522,6 @@
     });
     topBtn.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Certificate link placeholder (open dummy link)
-    document.getElementById('certLink')?.addEventListener('click', (e) => {
-        e.preventDefault();
-        alert("Certificate link will be added soon.");
     });
 </script>
 </body>
