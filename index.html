@@ -2,10 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nashra Azhar | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Nashra Azhar | Digital Portfolio</title>
+    <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Inter + Playfair Display for headings -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- html2pdf library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         * {
@@ -16,243 +19,253 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: linear-gradient(145deg, #f1f5f9 0%, #e6edf4 100%);
-            color: #0f172a;
+            background: radial-gradient(circle at 10% 20%, #f0f4fa, #e2eaf5);
+            color: #1a2c3e;
             line-height: 1.5;
             scroll-behavior: smooth;
             padding: 2rem 1rem;
-            transition: background 0.3s, color 0.2s;
+            transition: background 0.4s, color 0.3s;
         }
 
+        /* DARK MODE - Elegant deep navy + soft glow */
         body.dark-mode {
-            background: #0a192f;
-            color: #e2e8f0;
+            background: radial-gradient(circle at 20% 30%, #0b1a2e, #07121f);
+            color: #eef2ff;
         }
 
         body.dark-mode .section-card {
-            background: #1e2a47;
-            border-color: #2d3a5e;
-            color: #e2e8f0;
+            background: rgba(18, 30, 46, 0.7);
+            backdrop-filter: blur(2px);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         body.dark-mode .section-card:hover {
             border-color: #3b82f6;
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
         }
 
-        body.dark-mode .section-title {
-            color: #f1f5f9;
+        body.dark-mode .profile-header {
+            background: linear-gradient(135deg, #0c2b3b, #0a1c2a);
+            border: 1px solid rgba(59, 130, 246, 0.3);
         }
 
-        body.dark-mode .edu-item, 
-        body.dark-mode .project-item, 
-        body.dark-mode .award-item, 
-        body.dark-mode .vol-item, 
-        body.dark-mode .work-item {
-            border-bottom-color: #2d3a5e;
-        }
-
-        body.dark-mode .edu-item:hover,
-        body.dark-mode .project-item:hover,
-        body.dark-mode .award-item:hover,
-        body.dark-mode .vol-item:hover,
-        body.dark-mode .work-item:hover {
-            background: #16223b;
-        }
-
-        body.dark-mode .edu-title,
-        body.dark-mode .project-title,
-        body.dark-mode .award-title,
-        body.dark-mode .vol-title,
-        body.dark-mode .work-title {
-            color: #f1f5f9;
-        }
-
-        body.dark-mode .edu-date,
-        body.dark-mode .project-date,
-        body.dark-mode .award-date,
-        body.dark-mode .vol-date,
-        body.dark-mode .work-date {
-            color: #94a3b8;
-        }
-
-        body.dark-mode .desc-list li {
-            color: #cbd5e1;
+        body.dark-mode .action-btn, body.dark-mode .nav-btn {
+            background: #1e2f44;
+            color: #eef2ff;
+            border-color: #3b82f680;
         }
 
         body.dark-mode .skills-badge span {
-            background: #2d3a5e;
-            color: #e2e8f0;
+            background: #1e2f44;
+            color: #eef2ff;
         }
 
-        body.dark-mode .skills-badge span:hover {
-            background: #3b82f6;
-            color: white;
+        body.dark-mode .footer-note {
+            color: #7c8ea0;
         }
 
-        body.dark-mode .btn-download {
-            background: #3b82f6;
-        }
-
+        /* CONTAINER */
         .container {
-            max-width: 1200px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
-        :root {
-            --bg-body: #f1f5f9;
-            --card-white: #ffffff;
-            --text-primary: #0f172a;
-            --text-secondary: #475569;
-            --accent-blue: #2563eb;
-            --accent-hover: #1d4ed8;
-            --border-light: #e2e8f0;
-            --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.04);
-            --shadow-hover: 0 20px 30px -12px rgba(37, 99, 235, 0.2), 0 4px 8px rgba(0,0,0,0.02);
-            --transition: all 0.25s cubic-bezier(0.2, 0, 0, 1);
+        /* buttons row */
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-bottom: 1.8rem;
         }
 
-        @keyframes fadeInUp {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
+        .action-btn {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(4px);
+            border: 1px solid rgba(37, 99, 235, 0.3);
+            padding: 0.6rem 1.2rem;
+            border-radius: 60px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: #1e2a3a;
         }
 
-        .section-card {
-            animation: fadeInUp 0.5s ease forwards;
+        .action-btn:hover {
+            background: #2563eb;
+            color: white;
+            border-color: #2563eb;
+            transform: translateY(-2px);
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
         }
 
+        /* Profile Header - Glass morphism */
         .profile-header {
-            background: #0a2540;
-            color: white;
-            border-radius: 32px;
-            padding: 2rem 2rem;
+            background: rgba(10, 37, 64, 0.85);
+            backdrop-filter: blur(12px);
+            border-radius: 40px;
+            padding: 2.5rem 2rem;
             margin-bottom: 2rem;
-            box-shadow: var(--shadow-sm);
-            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
         }
+
         .profile-header:hover {
-            transform: translateY(-4px);
-            box-shadow: var(--shadow-hover);
+            transform: translateY(-5px);
+            box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.25);
         }
+
         .profile-header h1 {
-            font-size: 3rem;
+            font-family: 'Playfair Display', serif;
+            font-size: 3.2rem;
             font-weight: 700;
-            color: white;
+            background: linear-gradient(120deg, #ffffff, #c0e0ff);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
             letter-spacing: -0.02em;
         }
+
         .contact-info {
             display: flex;
             flex-wrap: wrap;
-            gap: 1.8rem;
-            margin-top: 1rem;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
         }
+
         .contact-info a, .contact-info span {
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            color: #e2e8f0;
+            gap: 8px;
+            color: #eef2ff;
             text-decoration: none;
-            font-size: 0.95rem;
-            transition: var(--transition);
-        }
-        .contact-info a:hover {
-            color: #90cdf4;
-            transform: translateX(5px);
-        }
-        .contact-info i {
-            width: 24px;
-            color: #90cdf4;
+            font-size: 0.9rem;
+            font-weight: 400;
+            transition: 0.2s;
         }
 
+        .contact-info a:hover {
+            color: #93c5fd;
+            transform: translateX(4px);
+        }
+
+        /* Section Cards - Modern, soft, elevated */
         .section-card {
-            background: var(--card-white);
-            border-radius: 28px;
-            padding: 1.8rem 2rem;
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(2px);
+            border-radius: 36px;
+            padding: 2rem 2rem;
             margin-bottom: 2rem;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
-            transition: var(--transition);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.08);
+            transition: all 0.35s cubic-bezier(0.2, 0, 0, 1);
         }
+
         .section-card:hover {
-            transform: translateY(-8px);
-            box-shadow: var(--shadow-hover);
-            border-color: rgba(37, 99, 235, 0.3);
+            transform: translateY(-6px);
+            box-shadow: 0 25px 40px -12px rgba(37, 99, 235, 0.2);
+            border-color: rgba(37, 99, 235, 0.4);
         }
+
         .section-title {
+            font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 600;
-            color: var(--text-primary);
-            border-left: 5px solid var(--accent-blue);
+            border-left: 5px solid #3b82f6;
             padding-left: 1rem;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
-            gap: 10px;
+            gap: 12px;
         }
+
         .section-title i {
-            color: var(--accent-blue);
+            color: #3b82f6;
             font-size: 1.6rem;
         }
 
+        /* list items */
         .edu-item, .project-item, .award-item, .vol-item, .work-item {
-            margin-bottom: 1.8rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--border-light);
-            transition: var(--transition);
-            border-radius: 16px;
+            margin-bottom: 1.5rem;
             padding: 0.5rem 0.5rem 0.5rem 1rem;
+            border-radius: 20px;
+            transition: all 0.2s;
         }
+
         .edu-item:hover, .project-item:hover, .award-item:hover, .vol-item:hover, .work-item:hover {
-            background: #f8fafc;
-            transform: translateX(6px);
-            border-bottom-color: var(--accent-blue);
+            background: rgba(59, 130, 246, 0.05);
+            transform: translateX(8px);
         }
+
         .edu-title, .project-title, .award-title, .vol-title, .work-title {
             font-weight: 700;
             font-size: 1.2rem;
-            color: var(--text-primary);
-        }
-        .edu-date, .project-date, .award-date, .vol-date, .work-date {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin: 0.25rem 0 0.6rem 0;
-        }
-        .desc-list {
-            padding-left: 1.5rem;
-            margin-top: 0.3rem;
-        }
-        .desc-list li {
-            margin-bottom: 0.3rem;
-            color: var(--text-secondary);
+            color: #0f2b3d;
         }
 
+        body.dark-mode .edu-title, body.dark-mode .project-title, 
+        body.dark-mode .award-title, body.dark-mode .vol-title, body.dark-mode .work-title {
+            color: #f0f4fa;
+        }
+
+        .edu-date, .project-date, .award-date, .vol-date, .work-date {
+            font-size: 0.8rem;
+            color: #5e7a93;
+            margin: 0.2rem 0 0.5rem 0;
+            letter-spacing: 0.3px;
+        }
+
+        .desc-list {
+            padding-left: 1.5rem;
+            color: #2c4056;
+        }
+
+        body.dark-mode .desc-list {
+            color: #ccdbe9;
+        }
+
+        .desc-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        /* Skills badges - pill design with bounce on hover */
         .skills-badge {
             display: flex;
             flex-wrap: wrap;
             gap: 0.7rem;
-            margin-top: 1rem;
-        }
-        .skills-badge span {
-            background: #eef2ff;
-            padding: 0.45rem 1.2rem;
-            border-radius: 40px;
-            font-size: 0.85rem;
-            font-weight: 500;
-            color: var(--text-primary);
-            transition: var(--transition);
-            cursor: default;
-        }
-        .skills-badge span:hover {
-            background: var(--accent-blue);
-            color: white;
-            transform: scale(1.05);
-            box-shadow: 0 4px 10px rgba(37,99,235,0.3);
+            margin-top: 0.5rem;
         }
 
+        .skills-badge span {
+            background: #eef3fc;
+            padding: 0.5rem 1.2rem;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            cursor: default;
+            border: 1px solid transparent;
+        }
+
+        .skills-badge span:hover {
+            background: #2563eb;
+            color: white;
+            transform: scale(1.03) translateY(-2px);
+            border-color: white;
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
+        }
+
+        /* Scroll to top button */
         .scroll-top {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: var(--accent-blue);
+            background: #2563eb;
             color: white;
             width: 48px;
             height: 48px;
@@ -264,61 +277,43 @@
             opacity: 0;
             visibility: hidden;
             transition: 0.2s;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             z-index: 99;
+            border: 1px solid rgba(255,255,255,0.3);
         }
         .scroll-top.show {
             opacity: 1;
             visibility: visible;
         }
         .scroll-top:hover {
-            background: var(--accent-hover);
+            background: #1e40af;
             transform: translateY(-3px);
         }
-        .action-buttons {
-            display: flex;
-            justify-content: flex-end;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-        .action-btn {
-            background: white;
-            border: none;
-            padding: 0.6rem 1.2rem;
-            border-radius: 40px;
-            font-size: 0.9rem;
-            font-weight: 500;
-            cursor: pointer;
-            transition: var(--transition);
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            box-shadow: var(--shadow-sm);
-            border: 1px solid var(--border-light);
-            color: var(--text-primary);
-        }
-        .action-btn:hover {
-            transform: translateY(-2px);
-            box-shadow: var(--shadow-hover);
-            background: var(--accent-blue);
-            color: white;
-            border-color: var(--accent-blue);
-        }
-        body.dark-mode .action-btn {
-            background: #1e2a47;
-            color: #e2e8f0;
-            border-color: #3b82f6;
-        }
-        body.dark-mode .action-btn:hover {
-            background: #3b82f6;
-            color: white;
-        }
+
+        /* responsive */
         @media (max-width: 700px) {
             body { padding: 1rem; }
-            .profile-header h1 { font-size: 2rem; }
+            .profile-header h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.5rem; }
             .section-card { padding: 1.2rem; }
             .action-buttons { justify-content: center; }
+            .contact-info { gap: 1rem; }
+        }
+
+        /* custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #e2e8f0;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 10px;
+        }
+        body.dark-mode ::-webkit-scrollbar-track {
+            background: #1e293b;
         }
     </style>
 </head>
@@ -340,28 +335,32 @@
         </div>
     </div>
 
-    <div id="section-education" class="section-card">
+    <!-- EDUCATION -->
+    <div class="section-card" id="section-education">
         <div class="section-title"><i class="fas fa-graduation-cap"></i> Education</div>
         <div class="edu-item"><div class="edu-title">BS Computer Science (Ongoing)</div><div class="edu-date">Fatima Jinnah Women University, Rawalpindi | 10/2024 – Current</div></div>
         <div class="edu-item"><div class="edu-title">Intermediate in Computer Science (ICS)</div><div class="edu-date">Shaheen Public School and College | 03/2022 – 06/2024</div></div>
         <div class="edu-item"><div class="edu-title">Matriculation in Computer Science</div><div class="edu-date">Shaheen Public School and College | 03/2020 – 04/2022</div></div>
     </div>
 
-    <div id="section-projects" class="section-card">
+    <!-- PROJECTS -->
+    <div class="section-card" id="section-projects">
         <div class="section-title"><i class="fas fa-code"></i> Projects</div>
         <div class="project-item"><div class="project-title">StemConnect: Responsive UI/UX Design System</div><div class="project-date">11/07/2025 – 01/08/2025</div><ul class="desc-list"><li>Designed a 17-screen UI/UX prototype to bridge Pakistan’s digital healthcare gap, enabling direct citizen registration and streamlining donor-patient matching.</li></ul></div>
         <div class="project-item"><div class="project-title">Library Management System: Java Swing & Oracle SQL</div><div class="project-date">10/2025</div><ul class="desc-list"><li>Optimized library operations by architecting a Java Swing & Oracle SQL system, digitizing records and enhancing administrative efficiency.</li></ul></div>
         <div class="project-item"><div class="project-title">SecureTrans: Hybrid Encryption System (Assembly & C++ GUI)</div><div class="project-date">01/2026</div><ul class="desc-list"><li>Developed hybrid cryptography system using 8086 Assembly and C++ (Win32 API)</li><li>Verified architecture & algorithm integrity in DOSBox/MASM.</li></ul></div>
     </div>
 
-    <div id="section-awards" class="section-card">
+    <!-- HONOURS & AWARDS -->
+    <div class="section-card" id="section-awards">
         <div class="section-title"><i class="fas fa-trophy"></i> Honours & Awards</div>
         <div class="award-item"><div class="award-title">Aspire Global Leader</div><div class="award-date">Aspire Institute (founded at Harvard University) | 12/2025</div><ul class="desc-list"><li>Aspire Global Leader — 2025 (Top 18% of 54,000+ applicants globally).</li></ul></div>
         <div class="award-item"><div class="award-title">Governor for the Future (Digital Badge)</div><div class="award-date">NELIS & OML | 10/2025</div><ul class="desc-list"><li>Engaged with youth from 100+ countries on sustainable leadership and social innovation strategies.</li></ul></div>
         <div class="award-item"><div class="award-title">3rd Position in Matriculation Exams (Sub-District Level)</div><div class="award-date">BISE Rawalpindi — 2022 (95%, 1041/1100)</div></div>
     </div>
 
-    <div id="section-volunteering" class="section-card">
+    <!-- VOLUNTEERING -->
+    <div class="section-card" id="section-volunteering">
         <div class="section-title"><i class="fas fa-hands-helping"></i> Volunteering</div>
         <div class="vol-item"><div class="vol-title">Deputy Focal Person - Creative Leadership Conference (CLC)</div><div class="vol-date">10/2025 – 11/2025</div><ul class="desc-list"><li>Led an 8-ambassador team to drive participation for a national youth conference, securing 23+ student registrations.</li></ul></div>
         <div class="vol-item"><div class="vol-title">Community Engagement Lead - Waziristan Outreach Project</div><div class="vol-date">07/2024</div><ul class="desc-list"><li>Volunteered for 50 hours, mobilizing 10+ women and girls to participate in community development projects in Waziristan.</li></ul></div>
@@ -369,23 +368,26 @@
         <div class="vol-item"><div class="vol-title">Mental Health Week, CBS</div><div class="vol-date">10/2025</div><ul class="desc-list"><li>Managed logistics and operations for a 2-day campus event with 600+ participants using entrepreneurial problem-solving.</li><li>Decor Team Member - Supported week-long awareness campaign by managing event setup and decor.</li></ul></div>
     </div>
 
-    <div id="section-work" class="section-card">
+    <!-- WORK EXPERIENCE -->
+    <div class="section-card" id="section-work">
         <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
         <div class="work-item"><div class="work-title">Software Engineering Simulation | Wells Fargo (via Forage)</div><div class="work-date">02/2026</div><ul class="desc-list"><li>Developed skills in data modeling and ERD design by learning and applying Wells Fargo’s professional engineering standards.</li></ul></div>
         <div class="work-item"><div class="work-title">UX Design Simulation | Lloyds Banking Group (via Forage)</div><div class="work-date">02/2026</div><ul class="desc-list"><li>Analyzed UX/competitor research to optimize digital banking features.</li></ul></div>
         <div class="work-item"><div class="work-title">Tulip Beauty Salon | Beauty Salon Assistant</div><div class="work-date">01/02/2022 – Current</div><ul class="desc-list"><li>Managed client appointments, payments, and customer service.</li></ul></div>
     </div>
 
-    <div id="section-skills" class="section-card">
+    <!-- SKILLS -->
+    <div class="section-card" id="section-skills">
         <div class="section-title"><i class="fas fa-cogs"></i> Skills</div>
         <div class="skills-badge">
             <span>Java</span><span>HTML</span><span>C</span><span>C++</span><span>Figma</span><span>UI/UX Design</span><span>Prototyping</span><span>Wireframing</span><span>User Research</span><span>Data Modeling</span><span>SQL (Database Design)</span>
         </div>
     </div>
 
-    <div id="section-courses" class="section-card">
+    <!-- COURSES -->
+    <div class="section-card" id="section-courses">
         <div class="section-title"><i class="fas fa-certificate"></i> Courses & Certifications</div>
-        <ul class="desc-list" style="margin-bottom:0;">
+        <ul class="desc-list">
             <li>Google UX Design Specialization (Coursera)</li>
             <li>Introduction to Generative AI (Coursera)</li>
             <li>AI for Everyone (Coursera)</li>
@@ -393,7 +395,8 @@
         </ul>
     </div>
 
-    <div id="section-conferences" class="section-card">
+    <!-- CONFERENCES -->
+    <div class="section-card" id="section-conferences">
         <div class="section-title"><i class="fas fa-users"></i> Conferences & Seminars</div>
         <div class="award-item">
             <div class="award-title">Emerging Technologies: Generative AI & LLM</div>
@@ -408,68 +411,62 @@
 </div>
 
 <script>
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    darkModeToggle.addEventListener('click', () => {
+    // DARK MODE
+    const darkToggle = document.getElementById('darkModeToggle');
+    darkToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
-        if (document.body.classList.contains('dark-mode')) {
-            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-        } else {
-            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-        }
+        darkToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
     });
 
-    const downloadBtn = document.getElementById('downloadPDFBtn');
-    downloadBtn.addEventListener('click', () => {
+    // PDF DOWNLOAD
+    document.getElementById('downloadPDFBtn').addEventListener('click', () => {
         const element = document.querySelector('.container');
-        const opt = {
+        html2pdf().set({
             margin: [0.5, 0.5, 0.5, 0.5],
             filename: 'Nashra_Azhar_CV.pdf',
             image: { type: 'jpeg', quality: 0.98 },
-            html2canvas: { scale: 2, letterRendering: true, useCORS: true },
+            html2canvas: { scale: 2, letterRendering: true },
             jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
-        };
-        html2pdf().set(opt).from(element).save();
+        }).from(element).save();
     });
 
+    // KEYBOARD NAVIGATION (optional, but kept for elegance)
     const sections = Array.from(document.querySelectorAll('.section-card'));
-    let currentIndex = 0;
-    function scrollToSection(index) {
-        if (index < 0) index = 0;
-        if (index >= sections.length) index = sections.length - 1;
-        currentIndex = index;
-        sections[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
-        sections[currentIndex].style.transform = 'scale(1.01)';
-        setTimeout(() => { if(sections[currentIndex]) sections[currentIndex].style.transform = ''; }, 200);
-    }
+    let currentIdx = 0;
 
-    // Keyboard navigation only (left/right arrows)
+    const scrollTo = (idx) => {
+        if (idx < 0) idx = 0;
+        if (idx >= sections.length) idx = sections.length - 1;
+        currentIdx = idx;
+        sections[currentIdx].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        sections[currentIdx].style.transform = 'scale(1.01)';
+        setTimeout(() => sections[currentIdx].style.transform = '', 200);
+    };
+
     window.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight') {
             e.preventDefault();
-            (currentIndex + 1 < sections.length) ? scrollToSection(currentIndex+1) : scrollToSection(0);
+            scrollTo(currentIdx + 1 < sections.length ? currentIdx + 1 : 0);
         } else if (e.key === 'ArrowLeft') {
             e.preventDefault();
-            (currentIndex - 1 >= 0) ? scrollToSection(currentIndex-1) : scrollToSection(sections.length-1);
+            scrollTo(currentIdx - 1 >= 0 ? currentIdx - 1 : sections.length - 1);
         }
     });
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                currentIndex = sections.indexOf(entry.target);
-            }
+            if (entry.isIntersecting) currentIdx = sections.indexOf(entry.target);
         });
     }, { threshold: 0.5 });
     sections.forEach(s => observer.observe(s));
 
+    // SCROLL TO TOP
     const topBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) topBtn.classList.add('show');
         else topBtn.classList.remove('show');
     });
-    topBtn.addEventListener('click', () => {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
+    topBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 </script>
 </body>
 </html>
