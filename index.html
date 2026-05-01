@@ -2,107 +2,367 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Nashra Azhar | Portfolio</title>
+    <!-- Font Awesome 6 (free icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Google Fonts for clean typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <style>
-        /* CSS Code Yahan Aayega */
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #4a90e2;
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: #eef2f5;   /* soft grey-blue background */
+            color: #1e2a3a;
+            line-height: 1.5;
+            scroll-behavior: smooth;
         }
+
+        /* ========== BLUE-GREY COLOR VARIABLES ========== */
+        :root {
+            --dark-slate: #1e2f3e;
+            --mid-bluegrey: #2c3e50;
+            --soft-blue: #4a7c9c;
+            --accent-blue: #2c7da0;
+            --light-bg: #f8fafc;
+            --card-white: #ffffff;
+            --shadow-sm: 0 8px 20px rgba(0,0,0,0.05);
+            --shadow-hover: 0 20px 30px -12px rgba(0,0,0,0.15);
+            --border-grey: #e2e8f0;
+        }
+
+        /* container */
         .container {
-            width: 80%;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem 0;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5rem;
+
+        /* ========== HEADER (PROFILE) ========== */
+        .profile-header {
+            background: var(--card-white);
+            border-radius: 32px;
+            padding: 2rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .tagline {
+        .profile-header:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-hover);
+        }
+        .profile-header h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--dark-slate);
+            letter-spacing: -0.02em;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin: 1rem 0 0.5rem 0;
+        }
+        .contact-info a, .contact-info span {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--mid-bluegrey);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+        .contact-info a:hover {
+            color: var(--accent-blue);
+            transform: translateX(3px);
+        }
+        .contact-info i {
+            width: 24px;
+            color: var(--soft-blue);
+        }
+
+        /* ========== SECTION CARDS ========== */
+        .section-card {
+            background: var(--card-white);
+            border-radius: 28px;
+            padding: 1.8rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+            transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+            border: 1px solid rgba(0,0,0,0.02);
+        }
+        .section-card:hover {
+            transform: translateY(-6px);
+            box-shadow: var(--shadow-hover);
+        }
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--dark-slate);
+            border-left: 5px solid var(--accent-blue);
+            padding-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        /* Education / project items */
+        .edu-item, .project-item, .award-item, .vol-item, .work-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--border-grey);
+            transition: background 0.2s;
+        }
+        .edu-item:last-child, .project-item:last-child, .vol-item:last-child {
+            border-bottom: none;
+        }
+        .edu-title, .project-title, .award-title, .vol-title, .work-title {
+            font-weight: 700;
             font-size: 1.2rem;
+            color: var(--mid-bluegrey);
+        }
+        .edu-date, .project-date, .award-date, .vol-date, .work-date {
+            font-size: 0.85rem;
+            color: #5f7f9c;
+            margin: 0.25rem 0 0.5rem 0;
+            letter-spacing: 0.3px;
+        }
+        .desc-list {
+            padding-left: 1.2rem;
             margin-top: 0.5rem;
         }
-        section {
-            margin-bottom: 2rem;
+        .desc-list li {
+            margin-bottom: 0.4rem;
+            color: #2c3e4e;
         }
-        h2 {
-            color: #4a90e2;
-            border-bottom: 2px solid #4a90e2;
-            padding-bottom: 0.5rem;
+        .skills-badge {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.6rem;
+            margin-top: 1rem;
         }
-        .project {
-            background: white;
-            padding: 1rem;
-            margin-bottom: 1rem;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        .skills-badge span {
+            background: #eef2fa;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--dark-slate);
+            transition: all 0.2s;
         }
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #333;
+        .skills-badge span:hover {
+            background: var(--soft-blue);
             color: white;
+            transform: scale(0.97);
+            cursor: default;
         }
-        a {
-            color: #4a90e2;
-            text-decoration: none;
+
+        /* arrow navigation buttons */
+        .nav-arrows {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 2rem 0 1rem;
         }
-        a:hover {
-            text-decoration: underline;
+        .nav-btn {
+            background: var(--card-white);
+            border: none;
+            width: 56px;
+            height: 56px;
+            border-radius: 60px;
+            font-size: 1.8rem;
+            cursor: pointer;
+            color: var(--mid-bluegrey);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: all 0.2s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .nav-btn:hover {
+            background: var(--accent-blue);
+            color: white;
+            transform: scale(1.08);
+            box-shadow: 0 8px 18px rgba(44,125,160,0.3);
+        }
+        .footer {
+            text-align: center;
+            padding: 2rem 0 1rem;
+            color: #5c6f87;
+            font-size: 0.85rem;
+        }
+        /* hover effects for list items */
+        .edu-item:hover, .project-item:hover, .award-item:hover, .vol-item:hover, .work-item:hover {
+            background: #f9fbfe;
+            border-radius: 16px;
+            padding-left: 8px;
+            margin-left: -8px;
+            transition: all 0.2s;
+        }
+        @media (max-width: 700px) {
+            .container { padding: 1rem; }
+            .profile-header h1 { font-size: 2rem; }
+            .section-title { font-size: 1.5rem; }
         }
     </style>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Nashra Azhar</h1>
-            <p class="tagline">Computer Science Undergraduate | UI/UX Designer | Software Engineer</p>
+
+<div class="container">
+    <!-- Header Profile -->
+    <div class="profile-header">
+        <h1>Nashra Azhar</h1>
+        <div class="contact-info">
+            <span><i class="fas fa-phone-alt"></i> (+92) 3295670575</span>
+            <a href="mailto:nashrahhere312@gmail.com"><i class="fas fa-envelope"></i> nashrahhere312@gmail.com</a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/nashraazhar/</a>
+            <a href="https://github.com/NashraAzhar" target="_blank"><i class="fab fa-github"></i> github.com/NashraAzhar</a>
         </div>
-    </header>
-
-    <div class="container">
-        <section>
-            <h2>About Me</h2>
-            <p>I am a dedicated CS student at Fatima Jinnah Women University and an Aspire Global Leader (Top 18% globally). My focus lies in UI/UX Design and Systems Engineering.</p>
-        </section>
-
-        <section>
-            <h2>Featured Projects</h2>
-            <div class="project">
-                <h3>StemConnect: Digital Healthcare UI/UX</h3>
-                <p>Designed a 17-screen responsive prototype to bridge Pakistan’s healthcare gap.</p>
-                <a href="#">View Figma Prototype</a>
-            </div>
-            <div class="project">
-                <h3>SecureTrans: Hybrid Encryption System</h3>
-                <p>Developed a cryptography system using 8086 Assembly and C++ GUI.</p>
-            </div>
-            <div class="project">
-                <h3>Library Management System</h3>
-                <p>Architected a digitized record system using Java Swing and Oracle SQL.</p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Contact</h2>
-            <p>Email: nashrah155@gmail.com</p>
-            <p>LinkedIn: <a href="#">linkedin.com/in/nashraazhar</a></p>
-        </section>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Nashra Azhar. All rights reserved.</p>
-    </footer>
+    <!-- ========== ALL SECTIONS (for arrow navigation) ========== -->
+    <div id="section-education" class="section-card">
+        <div class="section-title"><i class="fas fa-graduation-cap" style="margin-right: 10px;"></i> Education</div>
+        <div class="edu-item">
+            <div class="edu-title">BS Computer Science (Ongoing)</div>
+            <div class="edu-date">Fatima Jinnah Women University, Rawalpindi | 10/2024 – Current</div>
+        </div>
+        <div class="edu-item">
+            <div class="edu-title">Intermediate in Computer Science (ICS)</div>
+            <div class="edu-date">Shaheen Public School and College | 03/2022 – 06/2024</div>
+        </div>
+        <div class="edu-item">
+            <div class="edu-title">Matriculation in Computer Science</div>
+            <div class="edu-date">Shaheen Public School and College | 03/2020 – 04/2022</div>
+        </div>
+    </div>
+
+    <div id="section-projects" class="section-card">
+        <div class="section-title"><i class="fas fa-code"></i> Projects</div>
+        <div class="project-item">
+            <div class="project-title">StemConnect: Responsive UI/UX Design System</div>
+            <div class="project-date">11/07/2025 – 01/08/2025</div>
+            <ul class="desc-list"><li>Designed a 17-screen UI/UX prototype to bridge Pakistan’s digital healthcare gap, enabling direct citizen registration and streamlining donor-patient matching.</li></ul>
+        </div>
+        <div class="project-item">
+            <div class="project-title">Library Management System: Java Swing & Oracle SQL</div>
+            <div class="project-date">10/2025</div>
+            <ul class="desc-list"><li>Optimized library operations by architecting a Java Swing & Oracle SQL system, digitizing records and enhancing administrative efficiency.</li></ul>
+        </div>
+        <div class="project-item">
+            <div class="project-title">SecureTrans: Hybrid Encryption System (Assembly & C++ GUI)</div>
+            <div class="project-date">01/2026</div>
+            <ul class="desc-list"><li>Developed hybrid cryptography system using 8086 Assembly and C++ (Win32 API). Verified architecture & algorithm integrity in DOSBox/MASM.</li></ul>
+        </div>
+    </div>
+
+    <div id="section-awards" class="section-card">
+        <div class="section-title"><i class="fas fa-trophy"></i> Honours & Awards</div>
+        <div class="award-item"><div class="award-title">Aspire Global Leader</div><div class="award-date">Aspire Institute (founded at Harvard University) | 12/2025</div><ul class="desc-list"><li>Aspire Global Leader — 2025 (Top 18% of 54,000+ applicants globally).</li></ul></div>
+        <div class="award-item"><div class="award-title">Governor for the Future (Digital Badge)</div><div class="award-date">NELIS & OML | 10/2025</div><ul class="desc-list"><li>Engaged with youth from 100+ countries on sustainable leadership and social innovation strategies.</li></ul></div>
+        <div class="award-item"><div class="award-title">3rd Position in Matriculation Exams (Sub-District Level)</div><div class="award-date">BISE Rawalpindi — 2022 (95%, 1041/1100)</div></div>
+    </div>
+
+    <div id="section-volunteering" class="section-card">
+        <div class="section-title"><i class="fas fa-hands-helping"></i> Volunteering</div>
+        <div class="vol-item"><div class="vol-title">Deputy Focal Person - Creative Leadership Conference (CLC)</div><div class="vol-date">10/2025 – 11/2025</div><ul class="desc-list"><li>Led an 8-ambassador team to drive participation for a national youth conference, securing 23+ student registrations.</li></ul></div>
+        <div class="vol-item"><div class="vol-title">Community Engagement Lead - Waziristan Outreach Project</div><div class="vol-date">07/2024</div><ul class="desc-list"><li>Volunteered for 50 hours, mobilizing 10+ women and girls to participate in community development projects in Waziristan.</li></ul></div>
+        <div class="vol-item"><div class="vol-title">Flood Relief Volunteer Coordinator - FJWU x Akhuwat Drive</div><div class="vol-date">08/2025 – 10/2025</div><ul class="desc-list"><li>Volunteered in a 3-month relief drive, coordinating donations to support communities affected by the 2025 KPK floods.</li></ul></div>
+        <div class="vol-item"><div class="vol-title">Mental Health Week, CBS</div><div class="vol-date">10/2025</div><ul class="desc-list"><li>Managed logistics and operations for a 2-day campus event with 600+ participants using entrepreneurial problem-solving.</li><li>Decor Team Member - Supported week-long awareness campaign by managing event setup and decor.</li></ul></div>
+    </div>
+
+    <div id="section-work" class="section-card">
+        <div class="section-title"><i class="fas fa-briefcase"></i> Work Experience</div>
+        <div class="work-item"><div class="work-title">Software Engineering Simulation | Wells Fargo (via Forage)</div><div class="work-date">02/2026</div><ul class="desc-list"><li>Developed skills in data modeling and ERD design by learning and applying Wells Fargo’s professional engineering standards.</li></ul></div>
+        <div class="work-item"><div class="work-title">UX Design Simulation | Lloyds Banking Group (via Forage)</div><div class="work-date">02/2026</div><ul class="desc-list"><li>Analyzed UX/competitor research to optimize digital banking features.</li></ul></div>
+        <div class="work-item"><div class="work-title">Tulip Beauty Salon | Beauty Salon Assistant</div><div class="work-date">01/02/2022 – Current</div><ul class="desc-list"><li>Managed client appointments, payments, and customer service.</li></ul></div>
+    </div>
+
+    <div id="section-skills" class="section-card">
+        <div class="section-title"><i class="fas fa-cogs"></i> Skills</div>
+        <div class="skills-badge">
+            <span>Java</span><span>HTML</span><span>C</span><span>C++</span><span>Figma</span><span>UI/UX Design</span><span>Prototyping</span><span>Wireframing</span><span>User Research</span><span>Data Modeling</span><span>SQL (Database Design)</span>
+        </div>
+    </div>
+
+    <div id="section-courses" class="section-card">
+        <div class="section-title"><i class="fas fa-certificate"></i> Courses & Certifications</div>
+        <ul class="desc-list" style="margin-bottom:0.5rem;">
+            <li>Google UX Design Specialization (Coursera)</li>
+            <li>Introduction to Generative AI (Coursera)</li>
+            <li>AI for Everyone (Coursera)</li>
+            <li>Introduction to HTML (Coursera)</li>
+        </ul>
+    </div>
+
+    <div id="section-conferences" class="section-card">
+        <div class="section-title"><i class="fas fa-users"></i> Conferences & Seminars</div>
+        <div class="award-item"><div class="award-title">Emerging Technologies: Generative AI & LLM</div><div class="award-date">11/2025</div><ul class="desc-list"><li>Participated in expert-led sessions on Generative AI & LLMs and AI Governance with industry leaders (Arsh.AI). <a href="#" style="color:var(--accent-blue);">Certificate Link</a></li></ul></div>
+    </div>
+
+    <!-- Arrow navigation buttons (scrolls between sections) -->
+    <div class="nav-arrows">
+        <button class="nav-btn" id="prevSectionBtn"><i class="fas fa-arrow-left"></i></button>
+        <button class="nav-btn" id="nextSectionBtn"><i class="fas fa-arrow-right"></i></button>
+    </div>
+    <div class="footer">
+        <i class="fas fa-arrow-up"></i> Use ← → arrow keys on keyboard &nbsp;&nbsp;|&nbsp;&nbsp; Hover cards for effect
+    </div>
+</div>
+
+<script>
+    // Collect all section divs with class "section-card"
+    const sections = Array.from(document.querySelectorAll('.section-card'));
+    let currentIndex = 0;
+
+    // Function to scroll to a specific section by index
+    function scrollToSection(index) {
+        if (index < 0) index = 0;
+        if (index >= sections.length) index = sections.length - 1;
+        currentIndex = index;
+        sections[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
+        // optional micro bounce effect
+        sections[currentIndex].style.transition = 'all 0.1s';
+        sections[currentIndex].style.transform = 'scale(1.01)';
+        setTimeout(() => { if(sections[currentIndex]) sections[currentIndex].style.transform = ''; }, 200);
+    }
+
+    // Next / previous buttons
+    document.getElementById('nextSectionBtn').addEventListener('click', () => {
+        if (currentIndex + 1 < sections.length) scrollToSection(currentIndex + 1);
+        else scrollToSection(0); // loop to first (optional)
+    });
+    document.getElementById('prevSectionBtn').addEventListener('click', () => {
+        if (currentIndex - 1 >= 0) scrollToSection(currentIndex - 1);
+        else scrollToSection(sections.length - 1); // loop to last
+    });
+
+    // Keyboard left / right arrow support
+    window.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            if (currentIndex + 1 < sections.length) scrollToSection(currentIndex + 1);
+            else scrollToSection(0);
+        } else if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            if (currentIndex - 1 >= 0) scrollToSection(currentIndex - 1);
+            else scrollToSection(sections.length - 1);
+        }
+    });
+
+    // Detect which section is currently in view to update currentIndex (optional)
+    const observerOptions = { threshold: 0.5 };
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const idx = sections.indexOf(entry.target);
+                if (idx !== -1) currentIndex = idx;
+            }
+        });
+    }, observerOptions);
+    sections.forEach(section => observer.observe(section));
+</script>
 </body>
 </html>
