@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Nashra Azhar | Plum & Olive Portfolio</title>
+    <title>Nashra Azhar | Digital Portfolio</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Playfair Display + Inter -->
+    <!-- Google Fonts: Inter + Playfair Display for headings -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- html2pdf library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,58 +19,59 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at 10% 20%, #fdf4f2, #f7ede8);
-            color: #2d2a2e;
+            background: radial-gradient(circle at 10% 20%, #f0f4fa, #e2eaf5);
+            color: #1a2c3e;
             line-height: 1.5;
             scroll-behavior: smooth;
             padding: 2rem 1rem;
             transition: background 0.4s, color 0.3s;
         }
 
-        /* DARK MODE - Deep plum & olive */
+        /* DARK MODE - Elegant deep navy + soft glow */
         body.dark-mode {
-            background: radial-gradient(circle at 20% 30%, #1e1822, #14101b);
-            color: #e7dfe6;
+            background: radial-gradient(circle at 20% 30%, #0b1a2e, #07121f);
+            color: #eef2ff;
         }
 
         body.dark-mode .section-card {
-            background: rgba(30, 24, 38, 0.85);
+            background: rgba(18, 30, 46, 0.7);
             backdrop-filter: blur(2px);
-            border: 1px solid rgba(156, 175, 136, 0.3);
-            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(59, 130, 246, 0.2);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         body.dark-mode .section-card:hover {
-            border-color: #9caf88;
-            box-shadow: 0 20px 40px rgba(156, 175, 136, 0.2);
+            border-color: #3b82f6;
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2);
         }
 
         body.dark-mode .profile-header {
-            background: linear-gradient(135deg, #2a1f2f, #1e1822);
-            border: 1px solid rgba(156, 175, 136, 0.4);
+            background: linear-gradient(135deg, #0c2b3b, #0a1c2a);
+            border: 1px solid rgba(59, 130, 246, 0.3);
         }
 
-        body.dark-mode .action-btn {
-            background: #2a1f2f;
-            color: #e7dfe6;
-            border-color: #9caf88;
+        body.dark-mode .action-btn, body.dark-mode .nav-btn {
+            background: #1e2f44;
+            color: #eef2ff;
+            border-color: #3b82f680;
         }
 
         body.dark-mode .skills-badge span {
-            background: #2a1f2f;
-            color: #e7dfe6;
+            background: #1e2f44;
+            color: #eef2ff;
         }
 
         body.dark-mode .footer-note {
-            color: #8f7c8b;
+            color: #7c8ea0;
         }
 
+        /* CONTAINER */
         .container {
             max-width: 1100px;
             margin: 0 auto;
         }
 
-        /* Buttons row */
+        /* buttons row */
         .action-buttons {
             display: flex;
             justify-content: flex-end;
@@ -81,7 +82,7 @@
         .action-btn {
             background: rgba(255, 255, 255, 0.85);
             backdrop-filter: blur(4px);
-            border: 1px solid rgba(155, 93, 229, 0.3);
+            border: 1px solid rgba(37, 99, 235, 0.3);
             padding: 0.6rem 1.2rem;
             border-radius: 60px;
             font-size: 0.85rem;
@@ -91,39 +92,39 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #2d2a2e;
+            color: #1e2a3a;
         }
 
         .action-btn:hover {
-            background: #9b5de5;
+            background: #2563eb;
             color: white;
-            border-color: #9b5de5;
+            border-color: #2563eb;
             transform: translateY(-2px);
-            box-shadow: 0 8px 18px rgba(155, 93, 229, 0.25);
+            box-shadow: 0 8px 18px rgba(37, 99, 235, 0.2);
         }
 
-        /* Profile header - Glass */
+        /* Profile Header - Glass morphism */
         .profile-header {
-            background: rgba(45, 30, 48, 0.8);
+            background: rgba(10, 37, 64, 0.85);
             backdrop-filter: blur(12px);
             border-radius: 40px;
             padding: 2.5rem 2rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(255, 220, 240, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.2);
             box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
             transition: all 0.3s;
         }
 
         .profile-header:hover {
             transform: translateY(-5px);
-            box-shadow: 0 30px 50px -12px rgba(155, 93, 229, 0.2);
+            box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.25);
         }
 
         .profile-header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3.2rem;
             font-weight: 700;
-            background: linear-gradient(120deg, #f3e8ff, #b084cc);
+            background: linear-gradient(120deg, #ffffff, #c0e0ff);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -141,40 +142,41 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #f0e3ef;
+            color: #eef2ff;
             text-decoration: none;
             font-size: 0.9rem;
+            font-weight: 400;
             transition: 0.2s;
         }
 
         .contact-info a:hover {
-            color: #cfb2d9;
+            color: #93c5fd;
             transform: translateX(4px);
         }
 
-        /* Section Cards - Soft plum tint */
+        /* Section Cards - Modern, soft, elevated */
         .section-card {
-            background: rgba(255, 250, 248, 0.96);
+            background: rgba(255, 255, 255, 0.92);
             backdrop-filter: blur(2px);
             border-radius: 36px;
             padding: 2rem 2rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(156, 175, 136, 0.25);
-            box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.05);
-            transition: all 0.35s ease;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.08);
+            transition: all 0.35s cubic-bezier(0.2, 0, 0, 1);
         }
 
         .section-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 25px 40px -12px rgba(155, 93, 229, 0.2);
-            border-color: rgba(155, 93, 229, 0.4);
+            box-shadow: 0 25px 40px -12px rgba(37, 99, 235, 0.2);
+            border-color: rgba(37, 99, 235, 0.4);
         }
 
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 600;
-            border-left: 5px solid #9b5de5;
+            border-left: 5px solid #3b82f6;
             padding-left: 1rem;
             margin-bottom: 1.5rem;
             display: flex;
@@ -183,11 +185,11 @@
         }
 
         .section-title i {
-            color: #9caf88;
+            color: #3b82f6;
             font-size: 1.6rem;
         }
 
-        /* List items */
+        /* list items */
         .edu-item, .project-item, .award-item, .vol-item, .work-item {
             margin-bottom: 1.5rem;
             padding: 0.5rem 0.5rem 0.5rem 1rem;
@@ -196,42 +198,42 @@
         }
 
         .edu-item:hover, .project-item:hover, .award-item:hover, .vol-item:hover, .work-item:hover {
-            background: rgba(155, 93, 229, 0.05);
+            background: rgba(59, 130, 246, 0.05);
             transform: translateX(8px);
         }
 
         .edu-title, .project-title, .award-title, .vol-title, .work-title {
             font-weight: 700;
             font-size: 1.2rem;
-            color: #2d2a2e;
+            color: #0f2b3d;
         }
 
-        body.dark-mode .edu-title, body.dark-mode .project-title,
+        body.dark-mode .edu-title, body.dark-mode .project-title, 
         body.dark-mode .award-title, body.dark-mode .vol-title, body.dark-mode .work-title {
-            color: #f0e3ef;
+            color: #f0f4fa;
         }
 
         .edu-date, .project-date, .award-date, .vol-date, .work-date {
             font-size: 0.8rem;
-            color: #7d6b7a;
-            margin: 0.2rem 0 0.5rem;
+            color: #5e7a93;
+            margin: 0.2rem 0 0.5rem 0;
             letter-spacing: 0.3px;
         }
 
         .desc-list {
             padding-left: 1.5rem;
-            color: #4a3d48;
+            color: #2c4056;
         }
 
         body.dark-mode .desc-list {
-            color: #cdc0cf;
+            color: #ccdbe9;
         }
 
         .desc-list li {
             margin-bottom: 0.25rem;
         }
 
-        /* Skills badges */
+        /* Skills badges - pill design with bounce on hover */
         .skills-badge {
             display: flex;
             flex-wrap: wrap;
@@ -240,7 +242,7 @@
         }
 
         .skills-badge span {
-            background: #eee3f0;
+            background: #eef3fc;
             padding: 0.5rem 1.2rem;
             border-radius: 40px;
             font-size: 0.8rem;
@@ -251,19 +253,19 @@
         }
 
         .skills-badge span:hover {
-            background: #9b5de5;
+            background: #2563eb;
             color: white;
             transform: scale(1.03) translateY(-2px);
-            border-color: #cfb2d9;
-            box-shadow: 0 6px 12px rgba(155, 93, 229, 0.3);
+            border-color: white;
+            box-shadow: 0 6px 12px rgba(37, 99, 235, 0.3);
         }
 
-        /* Scroll to top */
+        /* Scroll to top button */
         .scroll-top {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #9b5de5;
+            background: #2563eb;
             color: white;
             width: 48px;
             height: 48px;
@@ -275,7 +277,7 @@
             opacity: 0;
             visibility: hidden;
             transition: 0.2s;
-            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             z-index: 99;
             border: 1px solid rgba(255,255,255,0.3);
         }
@@ -284,31 +286,34 @@
             visibility: visible;
         }
         .scroll-top:hover {
-            background: #7b44b5;
+            background: #1e40af;
             transform: translateY(-3px);
         }
 
+        /* responsive */
         @media (max-width: 700px) {
             body { padding: 1rem; }
             .profile-header h1 { font-size: 2.2rem; }
             .section-title { font-size: 1.5rem; }
             .section-card { padding: 1.2rem; }
             .action-buttons { justify-content: center; }
+            .contact-info { gap: 1rem; }
         }
 
+        /* custom scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #ede4ed;
+            background: #e2e8f0;
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #9b5de5;
+            background: #3b82f6;
             border-radius: 10px;
         }
         body.dark-mode ::-webkit-scrollbar-track {
-            background: #2a1f2f;
+            background: #1e293b;
         }
     </style>
 </head>
@@ -406,12 +411,14 @@
 </div>
 
 <script>
+    // DARK MODE
     const darkToggle = document.getElementById('darkModeToggle');
     darkToggle.addEventListener('click', () => {
         document.body.classList.toggle('dark-mode');
         darkToggle.innerHTML = document.body.classList.contains('dark-mode') ? '<i class="fas fa-sun"></i> Light Mode' : '<i class="fas fa-moon"></i> Dark Mode';
     });
 
+    // PDF DOWNLOAD
     document.getElementById('downloadPDFBtn').addEventListener('click', () => {
         const element = document.querySelector('.container');
         html2pdf().set({
@@ -423,9 +430,10 @@
         }).from(element).save();
     });
 
-    // Keyboard navigation
+    // KEYBOARD NAVIGATION (optional, but kept for elegance)
     const sections = Array.from(document.querySelectorAll('.section-card'));
     let currentIdx = 0;
+
     const scrollTo = (idx) => {
         if (idx < 0) idx = 0;
         if (idx >= sections.length) idx = sections.length - 1;
@@ -434,6 +442,7 @@
         sections[currentIdx].style.transform = 'scale(1.01)';
         setTimeout(() => sections[currentIdx].style.transform = '', 200);
     };
+
     window.addEventListener('keydown', (e) => {
         if (e.key === 'ArrowRight') {
             e.preventDefault();
@@ -443,6 +452,7 @@
             scrollTo(currentIdx - 1 >= 0 ? currentIdx - 1 : sections.length - 1);
         }
     });
+
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) currentIdx = sections.indexOf(entry.target);
@@ -450,6 +460,7 @@
     }, { threshold: 0.5 });
     sections.forEach(s => observer.observe(s));
 
+    // SCROLL TO TOP
     const topBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) topBtn.classList.add('show');
