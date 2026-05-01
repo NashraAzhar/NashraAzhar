@@ -7,6 +7,8 @@
     <!-- Font Awesome 6 & Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <!-- html2pdf library for PDF download -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <style>
         * {
             margin: 0;
@@ -21,6 +23,91 @@
             line-height: 1.5;
             scroll-behavior: smooth;
             padding: 2rem 1rem;
+            transition: background 0.3s, color 0.2s;
+        }
+
+        /* DARK MODE VARIABLES (applied when body has .dark-mode class) */
+        body.dark-mode {
+            background: #0a192f;  /* deep dark blue background */
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .section-card {
+            background: #1e2a47;
+            border-color: #2d3a5e;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .section-card:hover {
+            border-color: #3b82f6;
+        }
+
+        body.dark-mode .section-title {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .edu-item, 
+        body.dark-mode .project-item, 
+        body.dark-mode .award-item, 
+        body.dark-mode .vol-item, 
+        body.dark-mode .work-item {
+            border-bottom-color: #2d3a5e;
+        }
+
+        body.dark-mode .edu-item:hover,
+        body.dark-mode .project-item:hover,
+        body.dark-mode .award-item:hover,
+        body.dark-mode .vol-item:hover,
+        body.dark-mode .work-item:hover {
+            background: #16223b;
+        }
+
+        body.dark-mode .edu-title,
+        body.dark-mode .project-title,
+        body.dark-mode .award-title,
+        body.dark-mode .vol-title,
+        body.dark-mode .work-title {
+            color: #f1f5f9;
+        }
+
+        body.dark-mode .edu-date,
+        body.dark-mode .project-date,
+        body.dark-mode .award-date,
+        body.dark-mode .vol-date,
+        body.dark-mode .work-date {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .desc-list li {
+            color: #cbd5e1;
+        }
+
+        body.dark-mode .skills-badge span {
+            background: #2d3a5e;
+            color: #e2e8f0;
+        }
+
+        body.dark-mode .skills-badge span:hover {
+            background: #3b82f6;
+            color: white;
+        }
+
+        body.dark-mode .nav-btn {
+            background: #1e2a47;
+            color: white;
+            border-color: #3b82f6;
+        }
+
+        body.dark-mode .nav-btn:hover {
+            background: #3b82f6;
+        }
+
+        body.dark-mode .footer {
+            color: #94a3b8;
+        }
+
+        body.dark-mode .btn-download {
+            background: #3b82f6;
         }
 
         /* container */
@@ -29,7 +116,7 @@
             margin: 0 auto;
         }
 
-        /* ===== COLOR VARIABLES (modern slate + ocean blue) ===== */
+        /* ===== COLOR VARIABLES (light mode) ===== */
         :root {
             --bg-body: #f1f5f9;
             --card-white: #ffffff;
@@ -53,15 +140,14 @@
             animation: fadeInUp 0.5s ease forwards;
         }
 
-        /* profile header with glass effect */
+        /* profile header with DARK BLUE BACKGROUND + WHITE TEXT (always) */
         .profile-header {
-            background: rgba(255, 255, 255, 0.85);
-            backdrop-filter: blur(8px);
+            background: #0a2540;  /* dark blue */
+            color: white;
             border-radius: 32px;
             padding: 2rem 2rem;
             margin-bottom: 2rem;
             box-shadow: var(--shadow-sm);
-            border: 1px solid rgba(255,255,255,0.5);
             transition: var(--transition);
         }
         .profile-header:hover {
@@ -71,10 +157,7 @@
         .profile-header h1 {
             font-size: 3rem;
             font-weight: 700;
-            background: linear-gradient(135deg, #0f172a, #2563eb);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
+            color: white;
             letter-spacing: -0.02em;
         }
         .contact-info {
@@ -87,21 +170,21 @@
             display: inline-flex;
             align-items: center;
             gap: 10px;
-            color: var(--text-secondary);
+            color: #e2e8f0;
             text-decoration: none;
             font-size: 0.95rem;
             transition: var(--transition);
         }
         .contact-info a:hover {
-            color: var(--accent-blue);
+            color: #90cdf4;
             transform: translateX(5px);
         }
         .contact-info i {
             width: 24px;
-            color: var(--accent-blue);
+            color: #90cdf4;
         }
 
-        /* Section cards */
+        /* Section cards (light mode default) */
         .section-card {
             background: var(--card-white);
             border-radius: 28px;
@@ -132,7 +215,7 @@
             font-size: 1.6rem;
         }
 
-        /* list items (education, project, etc) */
+        /* list items */
         .edu-item, .project-item, .award-item, .vol-item, .work-item {
             margin-bottom: 1.8rem;
             padding-bottom: 1rem;
@@ -250,35 +333,64 @@
             color: var(--text-secondary);
             font-size: 0.85rem;
         }
-        .btn-download {
-            display: inline-block;
-            background: var(--accent-blue);
-            color: white;
+        /* Buttons row */
+        .action-buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+        .action-btn {
+            background: white;
+            border: none;
             padding: 0.6rem 1.2rem;
             border-radius: 40px;
-            text-decoration: none;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
+            cursor: pointer;
             transition: var(--transition);
-            margin-top: 0.5rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            box-shadow: var(--shadow-sm);
+            border: 1px solid var(--border-light);
+            color: var(--text-primary);
         }
-        .btn-download:hover {
-            background: var(--accent-hover);
+        .action-btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 14px rgba(37,99,235,0.3);
+            box-shadow: var(--shadow-hover);
+            background: var(--accent-blue);
+            color: white;
+            border-color: var(--accent-blue);
+        }
+        body.dark-mode .action-btn {
+            background: #1e2a47;
+            color: #e2e8f0;
+            border-color: #3b82f6;
+        }
+        body.dark-mode .action-btn:hover {
+            background: #3b82f6;
+            color: white;
         }
         @media (max-width: 700px) {
             body { padding: 1rem; }
             .profile-header h1 { font-size: 2rem; }
             .section-title { font-size: 1.5rem; }
             .section-card { padding: 1.2rem; }
+            .action-buttons { justify-content: center; }
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Header with glass morphism -->
+    <!-- Action Buttons (Dark Mode + PDF Download) -->
+    <div class="action-buttons">
+        <button id="darkModeToggle" class="action-btn"><i class="fas fa-moon"></i> Dark Mode</button>
+        <button id="downloadPDFBtn" class="action-btn"><i class="fas fa-file-pdf"></i> Download CV (PDF)</button>
+    </div>
+
+    <!-- Header with dark blue background -->
     <div class="profile-header">
         <h1>Nashra Azhar</h1>
         <div class="contact-info">
@@ -286,9 +398,6 @@
             <a href="mailto:nashrahhere312@gmail.com"><i class="fas fa-envelope"></i> nashrahhere312@gmail.com</a>
             <a href="https://www.linkedin.com/in/nashraazhar/" target="_blank"><i class="fab fa-linkedin"></i> linkedin.com/in/nashraazhar</a>
             <a href="https://github.com/NashraAzhar" target="_blank"><i class="fab fa-github"></i> github.com/NashraAzhar</a>
-        </div>
-        <div style="margin-top: 1rem;">
-            <a href="#" class="btn-download" id="resumeBtn"><i class="fas fa-download"></i> Download Resume (PDF)</a>
         </div>
     </div>
 
@@ -355,7 +464,7 @@
     <!-- CONFERENCES -->
     <div id="section-conferences" class="section-card">
         <div class="section-title"><i class="fas fa-users"></i> Conferences & Seminars</div>
-        <div class="award-item"><div class="award-title">Emerging Technologies: Generative AI & LLM</div><div class="award-date">11/2025</div><ul class="desc-list"><li>Participated in expert-led sessions on Generative AI & LLMs and AI Governance with industry leaders (Arsh.AI). <a href="#" target="_blank" style="color:var(--accent-blue);">Certificate Link</a></li></ul></div>
+        <div class="award-item"><div class="award-title">Emerging Technologies: Generative AI & LLM</div><div class="award-date">11/2025</div><ul class="desc-list"><li>Participated in expert-led sessions on Generative AI & LLMs and AI Governance with industry leaders (Arsh.AI). <a href="#" id="certLink" style="color:var(--accent-blue);">Certificate Link</a></li></ul></div>
     </div>
 
     <!-- Arrow navigation -->
@@ -374,7 +483,35 @@
 </div>
 
 <script>
-    // Section navigation (same as before)
+    // ======================== DARK MODE TOGGLE ========================
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    darkModeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        // Change button icon/text
+        if (document.body.classList.contains('dark-mode')) {
+            darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
+        } else {
+            darkModeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
+        }
+    });
+
+    // ======================== PDF DOWNLOAD ========================
+    const downloadBtn = document.getElementById('downloadPDFBtn');
+    downloadBtn.addEventListener('click', () => {
+        // Temporarily remove dark mode for PDF (if active) to get clean white PDF? But user may want dark mode PDF.
+        // We'll just capture the entire container.
+        const element = document.querySelector('.container');
+        const opt = {
+            margin:        [0.5, 0.5, 0.5, 0.5], // top, right, bottom, left (in inches)
+            filename:     'Nashra_Azhar_CV.pdf',
+            image:        { type: 'jpeg', quality: 0.98 },
+            html2canvas:  { scale: 2, letterRendering: true, useCORS: true },
+            jsPDF:        { unit: 'in', format: 'a4', orientation: 'portrait' }
+        };
+        html2pdf().set(opt).from(element).save();
+    });
+
+    // ======================== SECTION NAVIGATION (ARROWS) ========================
     const sections = Array.from(document.querySelectorAll('.section-card'));
     let currentIndex = 0;
 
@@ -383,7 +520,6 @@
         if (index >= sections.length) index = sections.length - 1;
         currentIndex = index;
         sections[currentIndex].scrollIntoView({ behavior: 'smooth', block: 'start' });
-        // mini pop effect
         sections[currentIndex].style.transform = 'scale(1.01)';
         setTimeout(() => { if(sections[currentIndex]) sections[currentIndex].style.transform = ''; }, 200);
     }
@@ -416,7 +552,7 @@
     }, { threshold: 0.5 });
     sections.forEach(s => observer.observe(s));
 
-    // scroll to top button
+    // Scroll to top button
     const topBtn = document.getElementById('scrollTopBtn');
     window.addEventListener('scroll', () => {
         if (window.scrollY > 300) topBtn.classList.add('show');
@@ -426,10 +562,10 @@
         window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
-    // Dummy resume download (alert for now)
-    document.getElementById('resumeBtn').addEventListener('click', (e) => {
+    // Certificate link placeholder (open dummy link)
+    document.getElementById('certLink')?.addEventListener('click', (e) => {
         e.preventDefault();
-        alert("Your PDF resume can be uploaded here. For now, you can download a placeholder or link to Google Drive.");
+        alert("Certificate link will be added soon.");
     });
 </script>
 </body>
