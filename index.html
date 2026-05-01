@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>Nashra Azhar | Digital Portfolio</title>
+    <title>Nashra Azhar | Teal & Gold Portfolio</title>
     <!-- Font Awesome 6 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Google Fonts: Inter + Playfair Display for headings -->
+    <!-- Google Fonts: Inter + Playfair Display -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- html2pdf library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -19,50 +19,55 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            background: radial-gradient(circle at 10% 20%, #f4f6f9, #e8ecf2);
-            color: #2c3e4e;
+            background: radial-gradient(circle at 10% 20%, #f5f7f0, #eef0e7);
+            color: #2c3e3b;
             line-height: 1.5;
             scroll-behavior: smooth;
             padding: 2rem 1rem;
             transition: background 0.4s, color 0.3s;
         }
 
-        /* DARK MODE - Charcoal grey / slate */
+        /* DARK MODE - Deep teal black with gold accents */
         body.dark-mode {
-            background: radial-gradient(circle at 20% 30%, #1a1f2b, #0f131c);
-            color: #eef2f5;
+            background: radial-gradient(circle at 20% 30%, #0f2c2a, #091a18);
+            color: #e2e8e4;
         }
 
         body.dark-mode .section-card {
-            background: rgba(30, 35, 48, 0.7);
+            background: rgba(18, 40, 38, 0.75);
             backdrop-filter: blur(2px);
-            border: 1px solid rgba(156, 163, 175, 0.25);
+            border: 1px solid rgba(212, 175, 55, 0.25);
             box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
         }
 
         body.dark-mode .section-card:hover {
-            border-color: #9ca3af;
-            box-shadow: 0 20px 40px rgba(156, 163, 175, 0.15);
+            border-color: #d4af37;
+            box-shadow: 0 20px 40px rgba(212, 175, 55, 0.15);
         }
 
         body.dark-mode .profile-header {
-            background: linear-gradient(135deg, #232836, #1a1e2a);
-            border: 1px solid rgba(156, 163, 175, 0.4);
+            background: linear-gradient(135deg, #1a403d, #0f2c2a);
+            border: 1px solid rgba(212, 175, 55, 0.4);
         }
 
         body.dark-mode .action-btn {
-            background: #232836;
-            color: #eef2f5;
-            border-color: #6b7280;
+            background: #1a403d;
+            color: #e2e8e4;
+            border-color: #d4af37;
         }
 
         body.dark-mode .skills-badge span {
-            background: #232836;
-            color: #eef2f5;
+            background: #1a403d;
+            color: #e2e8e4;
         }
 
-        body.dark-mode .footer-note {
-            color: #9ca3af;
+        body.dark-mode .edu-title, body.dark-mode .project-title,
+        body.dark-mode .award-title, body.dark-mode .vol-title, body.dark-mode .work-title {
+            color: #f0f4ea;
+        }
+
+        body.dark-mode .desc-list {
+            color: #cbd5c3;
         }
 
         .container {
@@ -79,9 +84,9 @@
         }
 
         .action-btn {
-            background: rgba(255, 255, 255, 0.85);
+            background: rgba(255, 255, 255, 0.88);
             backdrop-filter: blur(4px);
-            border: 1px solid rgba(107, 114, 128, 0.4);
+            border: 1px solid rgba(26, 107, 111, 0.4);
             padding: 0.6rem 1.2rem;
             border-radius: 60px;
             font-size: 0.85rem;
@@ -91,39 +96,39 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #2c3e4e;
+            color: #1a5f5b;
         }
 
         .action-btn:hover {
-            background: #4b5563;
+            background: #1a6b6f;
             color: white;
-            border-color: #4b5563;
+            border-color: #d4af37;
             transform: translateY(-2px);
-            box-shadow: 0 8px 18px rgba(75, 85, 99, 0.2);
+            box-shadow: 0 8px 18px rgba(26, 107, 111, 0.25);
         }
 
-        /* Profile Header - Glass morphism (grey tones) */
+        /* Profile Header - Teal glass morphism */
         .profile-header {
-            background: rgba(45, 55, 68, 0.85);
+            background: rgba(15, 85, 89, 0.85);
             backdrop-filter: blur(12px);
             border-radius: 40px;
             padding: 2.5rem 2rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(212, 175, 55, 0.4);
             box-shadow: 0 25px 40px -12px rgba(0, 0, 0, 0.2);
             transition: all 0.3s;
         }
 
         .profile-header:hover {
             transform: translateY(-5px);
-            box-shadow: 0 30px 50px -12px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 30px 50px -12px rgba(212, 175, 55, 0.2);
         }
 
         .profile-header h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3.2rem;
             font-weight: 700;
-            background: linear-gradient(120deg, #ffffff, #cbd5e1);
+            background: linear-gradient(120deg, #ffffff, #e8d49b);
             background-clip: text;
             -webkit-background-clip: text;
             color: transparent;
@@ -141,7 +146,7 @@
             display: inline-flex;
             align-items: center;
             gap: 8px;
-            color: #eef2f5;
+            color: #f0f5f0;
             text-decoration: none;
             font-size: 0.9rem;
             font-weight: 400;
@@ -149,43 +154,52 @@
         }
 
         .contact-info a:hover {
-            color: #cbd5e1;
+            color: #d4af37;
             transform: translateX(4px);
         }
 
-        /* Section Cards - Soft grey tint */
+        /* Section Cards - Soft cream with teal border */
         .section-card {
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 253, 245, 0.96);
             backdrop-filter: blur(2px);
             border-radius: 36px;
             padding: 2rem 2rem;
             margin-bottom: 2rem;
-            border: 1px solid rgba(255, 255, 255, 0.5);
-            box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.06);
+            border: 1px solid rgba(26, 107, 111, 0.25);
+            box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.05);
             transition: all 0.35s cubic-bezier(0.2, 0, 0, 1);
         }
 
         .section-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 25px 40px -12px rgba(75, 85, 99, 0.2);
-            border-color: rgba(107, 114, 128, 0.4);
+            box-shadow: 0 25px 40px -12px rgba(26, 107, 111, 0.25);
+            border-color: #d4af37;
         }
 
         .section-title {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
             font-weight: 600;
-            border-left: 5px solid #6b7280;
+            border-left: 5px solid #d4af37;
             padding-left: 1rem;
             margin-bottom: 1.5rem;
             display: flex;
             align-items: center;
             gap: 12px;
+            color: #1a5f5b;
         }
 
         .section-title i {
-            color: #6b7280;
+            color: #1a6b6f;
             font-size: 1.6rem;
+        }
+
+        body.dark-mode .section-title {
+            color: #e2e8e4;
+        }
+
+        body.dark-mode .section-title i {
+            color: #d4af37;
         }
 
         /* list items */
@@ -197,42 +211,33 @@
         }
 
         .edu-item:hover, .project-item:hover, .award-item:hover, .vol-item:hover, .work-item:hover {
-            background: rgba(107, 114, 128, 0.06);
+            background: rgba(26, 107, 111, 0.06);
             transform: translateX(8px);
         }
 
         .edu-title, .project-title, .award-title, .vol-title, .work-title {
             font-weight: 700;
             font-size: 1.2rem;
-            color: #2c3e4e;
-        }
-
-        body.dark-mode .edu-title, body.dark-mode .project-title, 
-        body.dark-mode .award-title, body.dark-mode .vol-title, body.dark-mode .work-title {
-            color: #f0f4fa;
+            color: #0f5559;
         }
 
         .edu-date, .project-date, .award-date, .vol-date, .work-date {
             font-size: 0.8rem;
-            color: #6b7280;
+            color: #8b7a4b;
             margin: 0.2rem 0 0.5rem 0;
             letter-spacing: 0.3px;
         }
 
         .desc-list {
             padding-left: 1.5rem;
-            color: #4b5563;
-        }
-
-        body.dark-mode .desc-list {
-            color: #cbd5e1;
+            color: #3e5a56;
         }
 
         .desc-list li {
             margin-bottom: 0.25rem;
         }
 
-        /* Skills badges - grey theme */
+        /* Skills badges - teal & gold */
         .skills-badge {
             display: flex;
             flex-wrap: wrap;
@@ -241,31 +246,32 @@
         }
 
         .skills-badge span {
-            background: #eef2f6;
+            background: #eef5f2;
             padding: 0.5rem 1.2rem;
             border-radius: 40px;
             font-size: 0.8rem;
             font-weight: 500;
             transition: all 0.2s ease;
             cursor: default;
-            border: 1px solid transparent;
+            border: 1px solid rgba(26, 107, 111, 0.2);
+            color: #1a5f5b;
         }
 
         .skills-badge span:hover {
-            background: #4b5563;
+            background: #1a6b6f;
             color: white;
             transform: scale(1.03) translateY(-2px);
-            border-color: #e2e8f0;
-            box-shadow: 0 6px 12px rgba(75, 85, 99, 0.25);
+            border-color: #d4af37;
+            box-shadow: 0 6px 12px rgba(26, 107, 111, 0.25);
         }
 
-        /* Scroll to top button */
+        /* Scroll to top button - gold */
         .scroll-top {
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: #4b5563;
-            color: white;
+            background: #1a6b6f;
+            color: #d4af37;
             width: 48px;
             height: 48px;
             border-radius: 30px;
@@ -278,15 +284,17 @@
             transition: 0.2s;
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
             z-index: 99;
-            border: 1px solid rgba(255,255,255,0.3);
+            border: 1px solid rgba(212, 175, 55, 0.5);
         }
         .scroll-top.show {
             opacity: 1;
             visibility: visible;
         }
         .scroll-top:hover {
-            background: #374151;
+            background: #0f5559;
+            color: white;
             transform: translateY(-3px);
+            border-color: #d4af37;
         }
 
         /* responsive */
@@ -299,23 +307,26 @@
             .contact-info { gap: 1rem; }
         }
 
-        /* custom scrollbar - grey */
+        /* custom scrollbar - teal & gold */
         ::-webkit-scrollbar {
             width: 8px;
         }
         ::-webkit-scrollbar-track {
-            background: #e2e8f0;
+            background: #e2e8e0;
             border-radius: 10px;
         }
         ::-webkit-scrollbar-thumb {
-            background: #6b7280;
+            background: #1a6b6f;
             border-radius: 10px;
         }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #d4af37;
+        }
         body.dark-mode ::-webkit-scrollbar-track {
-            background: #2d3748;
+            background: #1e3a38;
         }
         body.dark-mode ::-webkit-scrollbar-thumb {
-            background: #9ca3af;
+            background: #d4af37;
         }
     </style>
 </head>
